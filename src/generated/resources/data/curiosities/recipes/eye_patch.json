@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a  ",
+    "bcb",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:string"
+    },
+    "b": {
+      "item": "curiosities:purified_soul"
+    },
+    "c": {
+      "tag": "forge:leather"
+    }
+  },
+  "result": {
+    "item": "curiosities:eye_patch"
+  }
+}

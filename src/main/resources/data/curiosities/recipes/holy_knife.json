@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  a",
+    "ba ",
+    "cb "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/gold"
+    },
+    "b": {
+      "tag": "forge:dusts/glowstone"
+    },
+    "c": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  "result": {
+    "item": "curiosities:holy_knife"
+  }
+}

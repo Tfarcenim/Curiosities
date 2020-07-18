@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba",
+    "bcb",
+    "ddd"
+  ],
+  "key": {
+    "a": {
+      "item": "curiosities:mysterious_battery"
+    },
+    "b": {
+      "item": "curiosities:dark_obelisk"
+    },
+    "c": {
+      "item": "curiosities:voltic_thread"
+    },
+    "d": {
+      "item": "curiosities:soul_vial"
+    }
+  },
+  "result": {
+    "item": "curiosities:eldritch_mask"
+  }
+}

@@ -1,0 +1,24 @@
+
+{
+  "__comment": "This table is injected as its own pool into minecraft:chests/nether_bridge",
+  "pools": [{
+    "name": "main",
+    "rolls": 1,
+    "entries": [
+      {
+        "type": "item",
+        "name": "curiosities:crimson_blade",
+        "weight": 5
+      },
+      {
+        "type": "item",
+        "name": "curiosities:blazing_blade",
+        "weight": 2
+      },
+      {
+        "type": "empty",
+        "weight": 120
+      }
+    ]
+  }]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  a",
+    "ba ",
+    "c b"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:rods/blaze"
+    },
+    "b": {
+      "item": "curiosities:voltic_thread"
+    },
+    "c": {
+      "item": "curiosities:soul_vial"
+    }
+  },
+  "result": {
+    "item": "curiosities:blazing_blade"
+  }
+}

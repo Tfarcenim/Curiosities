@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aab",
+    "aba",
+    "baa"
+  ],
+  "key": {
+    "a": {
+      "item": "curiosities:creeper_leather"
+    },
+    "b": {
+      "item": "minecraft:diamond_sword"
+    }
+  },
+  "result": {
+    "item": "curiosities:defuser_sword"
+  }
+}

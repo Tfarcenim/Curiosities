@@ -1,0 +1,236 @@
+Mod Name: Hazel's Curiosities
+Version: 1.15.2
+
+Curios:
+
+Blackfoot's Paw (Charm)
+ - +25% speed
+ - Jump 4 blocks high
+ - +2 armor points
+ Lore: Came from a lost Warrior (Light Grey Text)
+ Yellow name
+ - Drops from any mob in a forest biome (1/1000 chance)
+
+
+Bezoar (Charm)
+ - Makes the player immune to poison.
+ - Drops from cave spiders.
+ Lore: Anti Poison (Light Grey Text)
+
+Vitamins (Charm)
+ - Makes the player immune to weakness.
+ - Drops from witches (1/30 drop)
+ Lore: Anti Weakness (Light Grey Text)
+ 
+Eyepatch (Head)
+ - Makes the player immune to blindness
+ Lore: Anti Blindness (Light Grey Text)
+ 
+ Recipe:
+ string + air + air
+ soul + leather + soul
+ soul + soul + soul
+ 
+Hyper Pill (Charm)
+ - Makes the player immune to slowness
+ - Drops from strays (1/100)
+ Lore: Anti Slowness (Light Grey Text)
+ 
+Miner's Gloves (Hands)
+ - Increases mining speed by 5%
+ - Found in Simple Dungeons (1/10) and Mineshafts (1/15)
+
+Builder's Gloves (Hands)
+ - Allows you to place and break blocks from an extra block away.
+ - 120 uses. 
+ Recipe:
+ air + air + air
+ leather + gold block + leather
+ 
+Looter's Badge (Charm)
+ - Adds the equivalent to 2 levels of looting to every kill. If you have looting III on your sword
+   that means that you will get item drops equivalent to looting V.
+ - Gives a 1.5x experience bonus.
+ - Increases damage towards the player by 25% from all mobs.
+ 
+ 
+Void Charm (Charm)
+ - Teleports you near where you fell off if falling into the void in the end. Breaks 
+   if activated. Plays ender pearl teleport noise and surrounds the player in purple
+   portal particles when activated.
+ Lore: Void Protection (Light Grey Text)
+ Recipe: 
+ Dark Obelisk (Shapeless) (Makes 4)
+ 
+Creeper Amulet (Necklace)
+ - When a creeper is within 10 blocks of the player and they try to explode they are
+   put back to their normal state right before they explode. 
+   
+Eldritch Mask (Head)
+ - +6 armor
+ - Makes player immune to slowness, weakness, blindness and nausea.
+ Recipe:
+ Mysterious Battery + Dark Obelisk + Mysterious Battery
+ VoltThread + Bottle of Souls + VoltThread
+ Bottle of Souls + Bottle of Souls + Bottle of Souls
+
+Weapons:
+ 
+Holy Knife:
+ 4 attack damage
+ 2.2 attack speed
+ Enchantability: 20
+ Durability: 300
+ Lore: Soul Hunter (Light Grey Text)
+ Repair Item: Gold Ingot or Glowstone Dust
+ 
+ Recipe:
+ air + air + gold ingot
+ glowstone vial + gold ingot + air
+ iron_ingot + glowstone vial + air
+ 
+Blaze Knight:
+ 11 attack damage
+ 1.6 attack speed
+ Enchantability: 10
+ Durability: 800
+ Yellow name
+ Repair Item: blaze rod
+ Can be found in nether fortress chests (1/60 chance)
+ When attacking a mob, all mobs within 5 blocks are lit on fire and take 3 damage.
+ 
+ Recipe: 
+ air + air + blaze_rod
+ Volt Thread + blaze rod + air
+ soul + air + Volt Thread
+ 
+ 
+Orohime:
+ 13 attack damage
+ 2.0 attack speed
+ Enchantability: 8
+ Durability: 1200
+ Repair: emerald
+ Yellow name
+ Lore: Soul Hunter
+ Does 20 damage to Zombies and Skeletons.
+ Enemies killed have a chance to drop a soul
+ Drops from the enderdragon. (1/5)
+ 
+Crimson Blade:
+ 6 attack damage
+ 1.6 attack damage
+ Enchantability: 14
+ Durability: 500
+ Repair: gold ingot
+ Chance to heal 3 health when attacking a mob.
+ Found in nether fortress chests.
+ 
+Defuser Sword:
+ 7 attack damage
+ 1.6 attack speed
+ Enchantability: 4
+ Durability: 1561
+ Repair: diamond
+ Does 2x damage to creepers
+ Creepers drop 2x EXP
+ Creeper drop +1-2 gunpowder
+ Recipe:
+ creeper leather + creeper leather + diamond sword
+ creeper leather + diamond sword + creeper leather
+ diamond sword + creeper leather + creeper leather
+ 
+ 
+Tools/Utility:
+
+Mushroom Claws:
+ 5 attack damage
+ 2.8 attack speed
+ Enchantability: 7
+ Durability: 2000
+ Mines all blocks very quickly if they have 1.5 hardness or below.
+ Can be enchanted with all pickaxe and weapon enchants.
+ Repair item: Vial of Mushroom Powder
+ 
+ Found in abandoned mineshafts (1/200)
+
+Vivre Card:
+ Right click on a mob to store that mob. Doing so will give the item an enchanting glow.
+ Right clicking will release the mob. Releasing the mob will break the vivre card.
+ Can be found in stronghold library chests. (Guaranteed 1 per chest)
+ 
+ Recipe:
+ eye of ender + paper + eye of ender
+ paper + purified soul + paper
+ eye of ender + paper + eye of ender
+
+Golden Fishing Rod
+  Durability: 128
+  Enchantability: 22
+  RepairItem: gold ingot
+  
+
+
+Food:
+
+MilkyDonut
+ - When eaten acts like milk
+ - Heals 2 hunger bars and 1.6 saturation.
+ Lore: Potion Cure (Light Grey) 
+ Recipe:
+ wheat + sweet_berry + egg
+ milk bucket + milk bucket + milk bucket
+ = 6 milky donut
+ 
+ 
+
+Crafting Items:
+  
+Purified Soul:
+ - Only dropped from mobs when using a Holy Knife. (Has a 1/50 chance to drop from any mob killed.) (1/30 from Orohime)
+ - Combine a soul with an item in an anvil to reduce that item's repair cost by 3.
+Glowstone Vial:
+ - Bulk glowstone storage.
+ - Can be crafted back into 32 glowstone.
+ Recipe:
+ glowstone block + glowstone block + glowstone block
+ glowstone block + glass bottle + glowstone block
+ glowstone block + glowstone block + glowstone block
+ 
+Mysterious_Battery
+ - Found in end city chests (1/47 chance)
+ - Lore: Eldritch Item (Light Grey Text)
+ - Yellow name
+ 
+Dark Obelisk
+ - Drops from endermen in the end. (1/300) (Only when killed by player)
+ - Lore: Eldritch Item (Light Grey Text)
+ - Yellow name
+ 
+VolticThread
+ - Drops from blazes in the nether. (1/150) (Only when killed by player)
+ - Lore: Eldritch Item (Light Grey Text)
+ - Yellow name
+ 
+Vial of Mushroom Powder:
+  Lore: Smells Weird (Light Grey Text)
+  Can be used in any recipe that needs mushrooms (brown or red)
+  
+  Recipe:
+  glass bottle + red mushroom + brown mushroom (shapeless)
+  
+Bottle of Souls:
+  Lore: Soul Storage (Light Grey Text)
+  
+  Recipe:
+  air + soul + air
+  soul + bottle + soul
+  air + soul + air
+  
+Creeper Leather:
+ Drops from Creepers 1/50
+ Can be used in recipes as leather or gunpowder. 
+
+
+
+ 

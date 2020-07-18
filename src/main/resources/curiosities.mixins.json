@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "tfar.curiosities.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "curiosities.refmap.json",
+  "mixins": [
+    "CreeperSwellGoalMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

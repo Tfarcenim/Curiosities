@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "curiosities:dark_obelisk"
+    }
+  ],
+  "result": {
+    "item": "curiosities:void_charm",
+    "count": 4
+  }
+}
