@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "abb",
+    "acb",
+    "caa"
+  ],
+  "key": {
+    "a": {
+      "item": "curiosities:creeper_leather"
+    },
+    "b": {
+      "item": "minecraft:string"
+    },
+    "c": {
+      "tag": "forge:gems/emerald"
+    }
+  },
+  "result": {
+    "item": "curiosities:creeper_amulet"
+  }
+}

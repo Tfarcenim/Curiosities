@@ -73,7 +73,7 @@ public class Curiosities {
 	public static Item mushroom_powder_vial;
 	public static Item soul_vial;
 	public static Item creeper_leather;
-
+	public static Item glowstone_vial;
 
 	List<Item> immunity_items;
 
@@ -99,7 +99,7 @@ public class Curiosities {
 	}
 
 	private void items(RegistryEvent.Register<Item> e) {
-		blackfoot_paw = register(new BlackFootsPawItem(new Item.Properties().group(ItemGroup.MISC)), "blackfoot_paw", e.getRegistry());
+		blackfoot_paw = register(new BlackFootsPawItem(new Item.Properties().group(ItemGroup.MISC).rarity(Rarity.UNCOMMON)), "blackfoot_paw", e.getRegistry());
 		bezoar = register(new ImmunityItem(new Item.Properties().group(ItemGroup.MISC), Effects.POISON, "Anti Poison"), "bezoar", e.getRegistry());
 		vitamins = register(new ImmunityItem(new Item.Properties().group(ItemGroup.MISC), Effects.WEAKNESS, "Anti Weakness"), "vitamins", e.getRegistry());
 		eye_patch = register(new ImmunityItem(new Item.Properties().group(ItemGroup.MISC), Effects.BLINDNESS, "Anti Blindness"), "eye_patch", e.getRegistry());
@@ -111,21 +111,22 @@ public class Curiosities {
 		creeper_amulet = register(new Item(new Item.Properties().group(ItemGroup.MISC)), "creeper_amulet", e.getRegistry());
 		eldritch_mask = register(new EldritchMaskItem(new Item.Properties().group(ItemGroup.MISC)), "eldritch_mask", e.getRegistry());
 		holy_knife = register(new SwordItem(Materials.holy, 3, -1.8f, new Item.Properties().group(ItemGroup.MISC)), "holy_knife", e.getRegistry());
-		blazing_blade = register(new SwordItem(Materials.blaze, 3, -1.8f, new Item.Properties().group(ItemGroup.MISC)), "blazing_blade", e.getRegistry());
-		orhime = register(new SwordItem(Materials.orohime, 3, -1.8f, new Item.Properties().group(ItemGroup.MISC)), "orhime", e.getRegistry());
+		blazing_blade = register(new SwordItem(Materials.blaze, 3, -1.8f, new Item.Properties().group(ItemGroup.MISC).rarity(Rarity.UNCOMMON)), "blazing_blade", e.getRegistry());
+		orhime = register(new SwordItem(Materials.orohime, 3, -1.8f, new Item.Properties().group(ItemGroup.MISC).rarity(Rarity.UNCOMMON)), "orhime", e.getRegistry());
 		crimson_blade = register(new SwordItem(Materials.crimson, 3, -1.8f, new Item.Properties().group(ItemGroup.MISC)), "crimson_blade", e.getRegistry());
 		defuser_sword = register(new SwordItem(Materials.defuser, 3, -1.8f, new Item.Properties().group(ItemGroup.MISC)), "defuser_sword", e.getRegistry());
 		mushroom_claws = register(new MushroomClawsItem(3, -1.8f, Materials.mushroom_claws, new HashSet<>(), new Item.Properties().group(ItemGroup.MISC).addToolType(ToolType.PICKAXE, 4)), "mushroom_claws", e.getRegistry());
-		vivre_card = register(new VivreCardItem(new Item.Properties().group(ItemGroup.MISC)), "vivre_card", e.getRegistry());
+		vivre_card = register(new VivreCardItem(new Item.Properties().group(ItemGroup.MISC).maxStackSize(1)), "vivre_card", e.getRegistry());
 		golden_fishing_rod = register(new GoldenFishingRodItem(new Item.Properties().group(ItemGroup.MISC).maxDamage(128)), "golden_fishing_rod", e.getRegistry());
 		milky_donut = register(new MilkyDonutItem(new Item.Properties().group(ItemGroup.MISC).food(new Food.Builder().hunger(2).saturation(.8f).build())), "milky_donut", e.getRegistry());
 		purified_soul = register(new Item(new Item.Properties().group(ItemGroup.MISC)), "purified_soul", e.getRegistry());
-		mysterious_battery = register(new EldritchItem(new Item.Properties().group(ItemGroup.MISC)), "mysterious_battery", e.getRegistry());
-		dark_obelisk = register(new EldritchItem(new Item.Properties().group(ItemGroup.MISC)), "dark_obelisk", e.getRegistry());
-		voltic_thread = register(new EldritchItem(new Item.Properties().group(ItemGroup.MISC)), "voltic_thread", e.getRegistry());
+		mysterious_battery = register(new EldritchItem(new Item.Properties().group(ItemGroup.MISC).rarity(Rarity.UNCOMMON)), "mysterious_battery", e.getRegistry());
+		dark_obelisk = register(new EldritchItem(new Item.Properties().group(ItemGroup.MISC).rarity(Rarity.UNCOMMON)), "dark_obelisk", e.getRegistry());
+		voltic_thread = register(new EldritchItem(new Item.Properties().group(ItemGroup.MISC).rarity(Rarity.UNCOMMON)), "voltic_thread", e.getRegistry());
 		mushroom_powder_vial = register(new LoreItem(new Item.Properties().group(ItemGroup.MISC),"Smells weird"), "mushroom_powder_vial", e.getRegistry());
 		soul_vial = register(new LoreItem(new Item.Properties().group(ItemGroup.MISC),"Soul Storage"), "soul_vial", e.getRegistry());
 		creeper_leather = register(new Item(new Item.Properties().group(ItemGroup.MISC)), "creeper_leather", e.getRegistry());
+		glowstone_vial = register(new Item(new Item.Properties().group(ItemGroup.MISC)), "glowstone_vial", e.getRegistry());
 	}
 
 	private void looting(LootingLevelEvent e) {
@@ -170,7 +171,7 @@ public class Curiosities {
 
 		private void xp(LivingExperienceDropEvent e) {
 		if (e.getAttackingPlayer() != null) {
-			PlayerEntity player = (PlayerEntity) e.getEntityLiving();
+			PlayerEntity player = e.getAttackingPlayer();
 			A.getCurio(looter_badge, player).ifPresent(stack -> e.setDroppedExperience((int) (e.getDroppedExperience() * 1.5)));
 			if (e.getEntityLiving() instanceof CreeperEntity && player.getHeldItemMainhand().getItem() == defuser_sword) {
 				e.setDroppedExperience(e.getDroppedExperience() * 2);

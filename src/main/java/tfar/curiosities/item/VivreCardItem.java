@@ -45,7 +45,7 @@ public class VivreCardItem extends Item {
 		Entity entity = getEntityFromStack(stack, player.world, true);
 		BlockPos blockPos = context.getPos();
 		entity.setPositionAndRotation(blockPos.getX() + 0.5, blockPos.getY() + 1, blockPos.getZ() + 0.5, 0, 0);
-		stack.setTag(null);
+		stack.shrink(1);
 		player.setHeldItem(hand, stack);
 		player.world.addEntity(entity);
 		//if (entity instanceof LivingEntity) ((LivingEntity) entity).playSound();
@@ -85,7 +85,7 @@ public class VivreCardItem extends Item {
 				String s0 = "entity." + getID(stack);
 				String s1 = s0.replace(':','.');
 				tooltip.add(new StringTextComponent(I18n.format(s1)));
-				tooltip.add(new StringTextComponent("Health: " + stack.getTag().getDouble("Health")));
+				tooltip.add(new StringTextComponent("Health: " + stack.getTag().getCompound(KEY).getDouble("Health")));
 			}
 	}
 
@@ -106,15 +106,15 @@ public class VivreCardItem extends Item {
 	}
 
 	public static String getID(ItemStack stack) {
-		return getID(stack.getOrCreateTag());
+		return getID(stack.getTag());
 	}
 
 	public static String getID(CompoundNBT nbt) {
-		return nbt.getString("entity");
+		return nbt.getCompound(KEY).getString("entity");
 	}
 
 	public boolean isBlacklisted(EntityType<?> entity) {
-		return true;//MobCatcher.blacklisted.func_199685_a_(entity);
+		return false;//MobCatcher.blacklisted.func_199685_a_(entity);
 	}
 
 	public static Entity getEntityFromNBT(CompoundNBT nbt, World world, boolean withInfo) {

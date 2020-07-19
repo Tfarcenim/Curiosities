@@ -189,6 +189,7 @@ Crafting Items:
 Purified Soul:
  - Only dropped from mobs when using a Holy Knife. (Has a 1/50 chance to drop from any mob killed.) (1/30 from Orohime)
  - Combine a soul with an item in an anvil to reduce that item's repair cost by 3.
+
 Glowstone Vial:
  - Bulk glowstone storage.
  - Can be crafted back into 32 glowstone.

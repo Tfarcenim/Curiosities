@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " a ",
+    "aaa",
     "aba",
-    " a "
+    "aaa"
   ],
   "key": {
     "a": {
-      "item": "curiosities:purified_soul"
+      "item": "minecraft:glowstone"
     },
     "b": {
       "item": "minecraft:glass_bottle"
     }
   },
   "result": {
-    "item": "curiosities:soul_vial"
+    "item": "curiosities:glowstone_vial"
   }
 }

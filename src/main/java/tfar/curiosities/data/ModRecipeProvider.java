@@ -8,6 +8,7 @@ import net.minecraft.item.Items;
 import net.minecraftforge.common.Tags;
 import tfar.curiosities.Curiosities;
 
+import javax.annotation.Nonnull;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider {
@@ -16,7 +17,7 @@ public class ModRecipeProvider extends RecipeProvider {
 	}
 
 	@Override
-	protected void registerRecipes(Consumer<IFinishedRecipe> consumer) {
+	protected void registerRecipes(@Nonnull Consumer<IFinishedRecipe> consumer) {
 		ShapedRecipeBuilderNoCriteria.shapedRecipe(Curiosities.eye_patch)
 						.key('a', Tags.Items.STRING)
 						.key('b', Curiosities.purified_soul)
@@ -84,7 +85,7 @@ public class ModRecipeProvider extends RecipeProvider {
 						.patternLine("ddd")
 						.build(consumer);
 
-		ShapedRecipeBuilderNoCriteria.shapedRecipe(Curiosities.purified_soul)
+		ShapedRecipeBuilderNoCriteria.shapedRecipe(Curiosities.glowstone_vial)
 						.key('a', Items.GLOWSTONE)
 						.key('b', Items.GLASS_BOTTLE)
 						.patternLine("aaa")
@@ -93,11 +94,20 @@ public class ModRecipeProvider extends RecipeProvider {
 						.build(consumer);
 
 		ShapedRecipeBuilderNoCriteria.shapedRecipe(Curiosities.soul_vial)
-						.key('a', Curiosities.soul_vial)
+						.key('a', Curiosities.purified_soul)
 						.key('b', Items.GLASS_BOTTLE)
 						.patternLine(" a ")
 						.patternLine("aba")
 						.patternLine(" a ")
+						.build(consumer);
+
+		ShapedRecipeBuilderNoCriteria.shapedRecipe(Curiosities.creeper_amulet)
+						.key('a', Curiosities.creeper_leather)
+						.key('b', Items.STRING)
+						.key('c', Tags.Items.GEMS_EMERALD)
+						.patternLine("abb")
+						.patternLine("acb")
+						.patternLine("caa")
 						.build(consumer);
 	}
 }
